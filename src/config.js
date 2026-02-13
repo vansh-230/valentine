@@ -7,15 +7,15 @@ export const config = {
   // ============================================
   // PERSONAL DETAILS
   // ============================================
-  partnerName: "My Love", // Change to your partner's name
-  yourName: "", // Your name
+  partnerName: "My Everything", // Change to your partner's name
+  yourName: "Ullu", // Your name
   
   // ============================================
   // VAULT UNLOCK CODE
   // ============================================
   // This is the secret code to unlock the vault
   // Examples: "02142024" (anniversary), "0214" (Valentine's Day), "iloveyou"
-  unlockCode: "69", // Change this to your special code
+  unlockCode: "24112019", // Change this to your special code
   
   // ============================================
   // OPEN WHEN ENVELOPES
@@ -27,15 +27,15 @@ export const config = {
       label: "Open when you miss me",
       type: "message", // "message", "image", or "link"
       content: "I miss you too! Remember, distance means nothing when someone means everything. You're always in my heart. 💕",
-      image: "/images/envelope_miss_me.png", // Beautiful romantic illustration
-      link: null, // Optional: external link (e.g., Spotify playlist)
+      image: "images/20251012_170300.jpg", // Beautiful romantic illustration
+      link: "https://youtu.be/pon8irRa8II?si=WW9lqxYPQoOX2Hjf", // Optional: external link (e.g., Spotify playlist)
     },
     {
       id: 2,
       label: "Open when you're sad",
       type: "message",
       content: "Hey beautiful, I know things are tough right now, but remember: you are stronger than you think, braver than you believe, and loved more than you know. I'm always here for you. ❤️",
-      image: "/images/envelope_sad.png",
+      image: "images/IMG_20250728_165910.jpg",
       link: null,
     },
     {
@@ -43,23 +43,23 @@ export const config = {
       label: "Open when you need a laugh",
       type: "message",
       content: "Why don't scientists trust atoms? Because they make up everything! 😂 Just like how you make up my entire world. Love you!",
-      image: "/images/envelope_laugh.png",
-      link: null,
+      image: "images/IMG-20230806-WA0009.jpg",
+      link: "https://youtu.be/l_63zbTj9Hw?si=KzzgbKjjrgv1vGat",
     },
     {
       id: 4,
       label: "Open when you can't sleep",
       type: "link",
       content: "Here's a playlist I made for you. Close your eyes and let the music carry you to dreamland. Sweet dreams, my love. 🌙",
-      image: "/images/envelope_sleep.png",
-      link: "https://open.spotify.com/playlist/37i9dQZF1DWZd79rJ6a7lp", // Replace with your playlist
+      image: "/images/IMG_20240106_165933.jpg",
+      link: "https://www.youtube.com/watch?v=s-bZD3O3P80&list=RDs-bZD3O3P80&start_radio=1", // Replace with your playlist
     },
     {
       id: 5,
       label: "Open when you need motivation",
       type: "message",
       content: "You are capable of amazing things! Don't let anyone (including yourself) tell you otherwise. I believe in you more than you'll ever know. Now go crush it! 💪✨",
-      image: "/images/envelope_motivation.png",
+      image: "/images/20251027_161453.jpg",
       link: null,
     },
     {
@@ -67,8 +67,8 @@ export const config = {
       label: "Open on a random Tuesday",
       type: "message",
       content: "Just a reminder that you're the best thing that's ever happened to me. I love you on Tuesdays, and every other day too. 💖",
-      image: "/images/envelope_random.png",
-      link: null,
+      image: "images/20260117_144357.jpg",
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
   ],
   
@@ -79,15 +79,15 @@ export const config = {
   coupons: [
     {
       id: 1,
-      title: "One Free Foot Rub",
+      title: "One Free Full Body Massage",
       description: "Redeemable anytime, anywhere. No expiration date!",
       icon: "💆",
     },
     {
       id: 2,
-      title: "Dinner at Your Favorite Place",
-      description: "You pick the restaurant, I'll pick up the bill.",
-      icon: "🍽️",
+      title: "Something sweet and spicy with me",
+      description: "You already know what this entails. 😉",
+      icon: "😈",
     },
     {
       id: 3,
