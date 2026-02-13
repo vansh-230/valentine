@@ -1,0 +1,20 @@
+.app {
+  min-height: 100vh;
+}
+
+.main-content {
+  position: relative;
+}
+
+/* Footer */
+.footer {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin: 0;
+}

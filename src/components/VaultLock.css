@@ -1,0 +1,133 @@
+.vault-lock {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+}
+
+.vault-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.vault-door {
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+/* Lock Icon */
+.lock-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-lg);
+  color: var(--color-primary);
+  animation: float 3s ease-in-out infinite;
+}
+
+.lock-icon svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
+}
+
+/* Titles */
+.vault-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.vault-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.1rem;
+}
+
+/* Code Form */
+.code-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.code-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--glass-border);
+  background: var(--glass-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  letter-spacing: 0.2em;
+  transition: all var(--transition-normal);
+}
+
+.code-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.code-input::placeholder {
+  color: var(--color-text-muted);
+  letter-spacing: normal;
+}
+
+.unlock-button {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: var(--spacing-md);
+}
+
+/* Error Message */
+.error-message {
+  color: var(--color-error);
+  font-size: 0.95rem;
+  margin: 0;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Hint */
+.hint {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.hint p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vault-door {
+    padding: var(--spacing-lg);
+  }
+  
+  .lock-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .code-input {
+    font-size: 1rem;
+  }
+}

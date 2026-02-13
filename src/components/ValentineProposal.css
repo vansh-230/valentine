@@ -1,0 +1,113 @@
+.valentine-proposal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-md);
+}
+
+/* Animated Hearts Background */
+.hearts-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Proposal Content */
+.proposal-content {
+  text-align: center;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.proposal-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: var(--spacing-sm);
+  animation: float 3s ease-in-out infinite;
+}
+
+.proposal-question {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xl);
+  font-family: var(--font-display);
+}
+
+/* Buttons Container */
+.buttons-container {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yes-button {
+  font-size: 1.5rem;
+  padding: var(--spacing-md) var(--spacing-xl);
+  animation: glow 2s ease-in-out infinite;
+  z-index: 100;
+}
+
+.no-button {
+  font-size: 1rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+  white-space: nowrap;
+}
+
+.hint-text {
+  margin-top: var(--spacing-lg);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .proposal-title {
+    font-size: 2.5rem;
+  }
+  
+  .proposal-question {
+    font-size: 1.5rem;
+  }
+  
+  .buttons-container {
+    min-height: 250px;
+  }
+  
+  .yes-button {
+    font-size: 1.2rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+}
