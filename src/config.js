@@ -8,14 +8,14 @@ export const config = {
   // PERSONAL DETAILS
   // ============================================
   partnerName: "My Love", // Change to your partner's name
-  yourName: "Me", // Your name
+  yourName: "", // Your name
   
   // ============================================
   // VAULT UNLOCK CODE
   // ============================================
   // This is the secret code to unlock the vault
   // Examples: "02142024" (anniversary), "0214" (Valentine's Day), "iloveyou"
-  unlockCode: "143", // Change this to your special code
+  unlockCode: "69", // Change this to your special code
   
   // ============================================
   // OPEN WHEN ENVELOPES
