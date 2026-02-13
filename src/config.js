@@ -7,7 +7,7 @@ export const config = {
   // ============================================
   // PERSONAL DETAILS
   // ============================================
-  partnerName: "My Everything", // Change to your partner's name
+  partnerName: "My Love", // Change to your partner's name
   yourName: "Ullu", // Your name
   
   // ============================================
